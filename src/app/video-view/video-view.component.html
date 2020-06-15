@@ -1,0 +1,8 @@
+<youtube-player 
+  videoId= {{id}}
+  suggestedQuality="highres" 
+  [height]="400" 
+  [width]="800">
+</youtube-player>
+<br>
+<button [hidden]="!id" class="btn btn-outline-primary" style="margin:auto;width:800px" (click)="addBookmark()">Add to bookmark</button>

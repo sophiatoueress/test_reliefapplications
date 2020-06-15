@@ -1,0 +1,25 @@
+<div class="container pt-5">
+<h2 class = "text-center">Youtube Video Player - Reliefapplications Test</h2>
+
+<div class="row">
+      <div class="col-12 pt-3">
+              <app-search-bar (sendUrl)="converturl($event)"></app-search-bar>
+      </div>
+</div>    
+
+<div class="row" style="height: 400px; font-size:12px; margin-right:-200px; margin-left:-200px">
+      
+      <div class="col-2 pt-5" >
+      <app-history (sendUrl)="converturl($event)"></app-history>        
+      </div>
+
+      <div class="col-2 pt-5" >
+      <app-bookmark (sendUrl)="converturl($event)"></app-bookmark>        
+      </div>
+
+      <div class="col-6 pt-5" >
+      <app-video-view id={{idUrl}}></app-video-view>
+      </div>
+</div>
+
+</div>
